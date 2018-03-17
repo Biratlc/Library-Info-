@@ -1,24 +1,56 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿html, body {
+	color: white;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+
+/*NAVBAR*/
+@media all and (min-width:767px) {
+	/* .navbar-brand{
+        display: none;
+    }
+    */
+	.navbar-nav {
+		display: flex;
+		flex: 1;
+	}
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+@media all and (max-width:767px) {
+	ul.nav.navbar-nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+@media all and (max-width:767px) {
+	.navbar-brand {
+	}
+}
+
+@media all and (min-width:767px) {
+	.right-nav {
+		float: right !important;
+	}
+}
+
+nav.navbar.navbar-default {
+	background-color: #d2ab99de;
+	color: #f2dede;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	/*background-color: #f2dede;*/
+}
+
+button.navbar-toggle.collapsed {
+	border-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+}
+
+button.navbar-toggle.collapsed {
+	background-color: #d2ab99de;
 }
